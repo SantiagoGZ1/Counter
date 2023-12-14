@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#counter{
+  padding: 20px;
+}
+
+
+.buttonsContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* Asegúrate de definir las filas y las columnas según tus necesidades */
+  
+}
+
+.buttons{
+  width: 50vb;
+  border-radius: 2vh;
+  border: 1px black solid;
+  background-color: rgb(215, 250, 221);
+  margin: 2vb;
+  padding: 1.5vb;
+  font-size: 3vb;
+  transition-duration: 400ms; 
+}
+
+.buttons:hover{
+  background-color: rgb(215, 250, 221);
+  cursor: pointer;
+  scale: 1.2;
+}
+
+#counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  margin: 10px;
+}

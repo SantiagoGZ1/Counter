@@ -21,11 +21,24 @@ h1{
   display: grid;
   justify-content: center;
   align-items: center;
-  /* Asegúrate de definir las filas y las columnas según tus necesidades */
-  
-}
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
 
+}
 .buttons{
+  width: 25vw;
+  height: auto;
+  border-radius: 2vh;
+  border: 1px black solid;
+  background-color: rgb(210, 252, 217);
+  margin: 2vw;
+  padding: 1.5vw;
+  font-size: 2.3vw;
+
+  transition-duration: 400ms; 
+
+}
+/* .buttons{
   width: 50vb;
   border-radius: 2vh;
   border: 1px black solid;
@@ -34,7 +47,7 @@ h1{
   padding: 1.5vb;
   font-size: 3vb;
   transition-duration: 400ms; 
-}
+} */
 
 .buttons:hover{
   background-color: rgb(215, 250, 221);
@@ -48,4 +61,43 @@ h1{
   align-items: center;
   font-size: 100px;
   margin: 10px;
+}
+@media screen and (max-width:810px){
+  .buttonsContainer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .buttons{
+    width: 55vw;
+    height: auto;
+    border-radius: 2vh;
+    border: 1px black solid;
+    background-color: rgb(210, 252, 217);
+    margin: 2vw;
+    padding: 2vw;
+    font-size: 4vw;
+  
+    transition-duration: 400ms; 
+  }
+
+}
+
+@media screen and (max-width:400px) {
+
+  .buttons{
+    width: 75vw;
+    height: auto;
+    border-radius: 2vh;
+    border: 1px black solid;
+    background-color: rgb(210, 252, 217);
+    margin: 3vw;
+    padding: 1.5vw;
+    font-size: 6vw;
+  
+    transition-duration: 400ms; 
+  }
+  
 }
